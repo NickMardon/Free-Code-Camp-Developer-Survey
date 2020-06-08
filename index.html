@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>freeCodeCamp Survey</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!--Icons-->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" type="text/css">
+
+</head>
+<body>
+    <h1 id="title">FreeCodeCamp Survey <i class="fa fa-fire" aria-hidden="true"></i></h1>
+<div class="contentBorder">
+    <h3 id="subTitle">Why are you learning to code? Web Developer Survey</h3>
+    <p id="description">This an example survey form I built with skills that I learned on <a href="https://www.freecodecamp.org/learn/">freecodecamp.org</a>.</p>
+</div>
+<div id="wrapper">
+    <form id="survey-form">
+        <!--Name, Email, Linkedin, and Age-->
+        <section class="personalInfo">
+        <label id="name-label">What is your full name?</label>
+        <input id="name" type="text" name="name" placeholder="firstName lastName" required>
+        <label id="email-label">What is your email?</label>
+        <input id="email" type="email" name="email" placeholder="example@email.com" required> 
+        <label id="number-label">How old are you?</label>
+        <input id="number" type="number" min="0" max="150" name="age" placeholder="Age?"required>
+        <label id="linkedin-label">What is your LinkedIn?</label>
+        <input id="linkedin" type="text" name="linkedin" placeholder="www.linkedin.com/">
+        </section>
+        <!--How long? Dropdown options-->
+        <section class="beenCoding">
+        <label id="dropdown-label">How long have you been coding?</label>
+        <select name="howLong" id="dropdown">
+            <option value="3MOless">3 months or less</option>
+            <option value="3-6MO">3 to 6 months</option>
+            <option value="6-12MO">6 to 12 months</option>
+            <option value="1-2Y">1 to 2 years</option>
+            <option value="2Ymore">2 years or more</option>
+        </select>
+        </section>
+        <br>
+        <!--Radio Buttons-->
+        <section class="computerPreference">
+        <label for="MacVPC">Do you use a Mac or PC?</label>
+        <label for="Mac">
+            <input id="Mac" type="radio" name="MacVPC" value="Mac">Mac
+            </label>
+         <label for="PC">
+            <input id="PC" type="radio" name="MacVPC" value="PC">PC
+            </label>
+        </section>
+        <br>
+        <section class="TEprefference">
+        <label for="textEditor">What text editor do you use?</label>
+        <label for="vsCode">
+            <input id="vsCode" type="radio" name="textEditor" value="vsCode">VS Code
+            </label>
+         <label for="Sublime">
+            <input id="Sublime" type="radio" name="textEditor" value="sublime">Sublime Text
+            </label>
+        <label for="Atom">
+             <input id="Atom" type="radio" name="textEditor" value="atom">Atom
+             </label>
+         <label for="otherTE">
+            <input id="otherTE" type="radio" name="textEditor" value="other">Other
+            </label>
+        </section>
+        <br>
+        <section class="htmlCss">
+        <label for="htmlCssYesNo">Do you know HTML and CSS?</label>
+            <input id="yes" type="radio" name="htmlCssYesNo" value="yes">yes
+            <input id="no" type="radio" name="htmlCssYesNo" value="no">No
+        </section>
+        </section>
+        <br>
+        <!--Checkboxes-->
+        <section class="programmingCheckbox">
+        <label for="programmingLanguage">Which programming languages do you know?</label>
+        <label for="JavaScript"><input id="JavaScript" value="JavaScript" type="checkbox" name="programmingLanguage">JavaScript</label>
+        <label for="Python"><input id="python" value="python" type="checkbox" value="python" name="programmingLanguage">Python</label>
+        <label for="ruby"><input id="ruby" value="ruby" type="checkbox" name="programmingLanguage">Ruby on Rails</label>
+        <label for="java"><input id="java" value="java" type="checkbox" name="programmingLanguage">Java</label>
+        <label for="c"><input id="c" value="c" type="checkbox" name="programmingLanguage">C</label>
+        <label for="c++"><input id="c++" value="c++" type="checkbox" name="programmingLanguage">C++</label>
+        <label for="c#"><input id="c#" value="c#" type="checkbox" name="programmingLanguage">C#</label>
+        <label for="php"><input id="php" value="php" type="checkbox" name="programmingLanguage">PHP</label>
+        </section>
+
+        <!--Text area questions-->
+        <div>
+        <section class="whatDoYouLike">
+        <label for="question1text">What do you like most about coding?</label>
+        <textarea id="question1text" rows="10" cols="100">
+        </textarea>
+        </section>
+        <br>
+        </div>
+        <div>
+        <section class="whyDoYouCode">
+        <label for="question2text">Why are you learning to code?</label>
+        <textarea id="question2text" rows="10" cols="100"></textarea>
+        </section>
+        <br>
+        </div>
+        <div>
+        <section class="whatAreYourGoals">
+        <label for="question3text">What are your career goals?</label>
+        <textarea id="question3text" rows="10" cols="100">   
+        </textarea>
+        </section>
+        <br>
+        </div>
+
+        <!--Submit button-->
+        <span>
+        <button type="submit" id="submit">Submit!</button>
+        </span>
+    </form>
+</div>
+</body>
+</html>

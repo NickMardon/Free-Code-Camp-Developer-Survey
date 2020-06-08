@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+#title {
+    text-align: center;
+    color: #F5F7F9;
+    font-family: courier, monospace;
+    font-size: 2rem;
+    background-color: #042550;
+}
+.personalInfo {
+    display: grid;
+}
+
+form {
+    width: 60%;
+   align-content: center;
+}
+input {
+    width: 100%;
+}
+#subTitle {
+    font-size: 35px;
+}
+#description {
+    font-size: 20px;
+}
+.personalInfo {
+    padding: 1rem 0;
+}
+#wrapper {
+    margin: 0 auto;
+    clear: both;
+    width: 80%;
+  }
+textarea {
+    float: left;
+}
+
+textarea label {
+    float: left;
+    display: inline-block;
+}
+
+.contentBorder {
+    padding: 4px;
+    margin: 20px 165px;
+    border: 2px solid black;
+}
+
+label {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+#submit {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+    margin: 2rem 0;
+    padding: 10px 4px;
+    color: whitesmoke;
+    background-color: #042550;
+}
